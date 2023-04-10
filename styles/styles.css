@@ -1,0 +1,283 @@
+/* Navbar */
+
+.navbar{
+  transition: background-color 0.5s ease;
+}
+
+.scrolled {
+  background-color: #ffffff !important;
+}
+
+.navbar-brand{
+  padding: 7px;
+  border-radius: 25px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+}
+
+.navbar-brand img{
+  background-color: white;
+  background-size: cover;
+  border-radius: 18px;
+}
+
+.navbar-nav > .nav-link, .tombol{
+  margin-left: 22px;
+}
+
+.img-fluid{
+  border-radius: 50px;
+}
+
+
+/* Carousel */
+.carausel{
+  position: relative;
+
+}
+.carousel-item-top img {
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 100px;
+  }
+
+  .carousel-item-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.3));
+    background-color: rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+
+  .carousel-caption-top {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: white;
+    z-index: 3;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-control-prev-top,
+  .carousel-control-next-top {
+    width: 40px;
+    height: 40px;
+    border-radius: 75%;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 10px 20px;
+  }
+
+  /* Carousel caption */
+  .carousel-caption h5{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .carousel-caption p{
+    font-size: 15px;
+  }
+
+  /* end carousel */
+
+  /* Info panel */
+  .info-panel{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+
+    background-color: white;
+    margin-top: -50px;
+    padding: 30px;
+    top: 0;
+  }
+
+  .info-panel img{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-panel h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px
+  }
+
+  .info-panel p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+  }
+/* Recommendation for today */
+
+.recommendation{
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.recommendation a{
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+
+
+.recommendation h1 span{
+  font-weight: 500;
+
+}
+
+
+
+  .card-food{
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: left;
+  }
+
+  .card-food-text{
+    display: inline-block;
+    padding-left: 50px;
+    overflow: auto;
+    max-height: 300px;
+    max-width: 30%;
+    z-index: 1;
+  }
+
+  #foodanddrink + section{
+    margin-top: 400px;
+  }
+
+  .caption-rec {
+    padding: 0 2rem; /* Adjust the padding as needed */
+  }
+
+  .carousel-item-food-card > img{
+height: 300px;
+  }
+
+.logo-footer{
+  width:20px;
+  display: inline;
+}
+
+/* Utilities */
+
+
+.tombol{
+  margin-top: 20px;
+  width:fit-content;
+  color: white;
+  border-radius: 40px;
+
+}
+
+.img-figure{
+  width: 50%;
+  height: auto;
+}
+
+.img-info-panel{
+  width: 70px;
+
+}
+
+.white-text{
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+ h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 200;
+  color: #ACACAC;
+}
+
+  /* Desktop version */
+  @media (min-width: 992px) {
+
+    .navbar-nav{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    .nav-link{
+      text-transform: uppercase;
+      margin-right: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+
+    }
+
+    .nav-link:hover::after{
+      content:"";
+      display: block;
+      border-bottom: 3px solid #0B63DC;
+      width: 50%;
+      margin: auto;
+      padding-bottom: 4px;
+      margin-bottom: -6px;
+    }
+
+    .navbar-text{
+      color: white;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .carousel-caption{
+      width: 75%;
+    }
+    .carousel-caption > h5{
+      font-size: 60px;
+    }
+
+    .carousel-caption > p{
+      font-size: 25px;
+    } 
+
+    .recommendation{
+      margin-left: 30px;
+    }
+
+    .recommendation h1{
+      font-size: 48px;
+    }
+
+    .recommendation p{
+      font-size: 22px;
+    }
+
+    .recommendation img{
+      margin-top: 50px;
+    }
+
+    /* Utilities */
+    .tombol{
+      margin-top: 0px;
+    }
+
+
+  }
+
